@@ -40,18 +40,18 @@ const StyledSearch = styled.div`
 // Informação sempre desce
 
 export default function Search({ }) {
-    const [valorDaBusca, novoValorDaBusca] = React.useState("Teste")
-    console.log("Search", valorDaBusca)
-    return (
-        <StyledSearch>
-            <input type="text" onChange={function (infosDoEvento) {
-                console.log("Digitou algo")
-                novoValorDaBusca(infosDoEvento.target.value)
-            }} />
-            {valorDaBusca}
-            <button>
-                🔎
-            </button>
-        </StyledSearch>
-    )
+  const [valorDaBusca, novoValorDaBusca] = React.useState("Teste")
+  console.log("Search", valorDaBusca)
+  return (
+    <StyledSearch>
+      <input type="text" onChange={function (infosDoEvento) {
+        console.log("Digitou algo")
+        novoValorDaBusca(infosDoEvento.target.value)
+      }} />
+      {valorDaBusca}
+      <button>
+        🔎
+      </button>
+    </StyledSearch>
+  )
 }
