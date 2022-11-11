@@ -46,7 +46,8 @@ const StyledHeader = styled.div`
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-top: 60px;
+    margin-top: 65px;
+    margin-left: 28px;
 
     .userInfo {
     display: flex;
@@ -65,7 +66,10 @@ function Header() {
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div style={{
-                    display: "inline-block",
+                    display: "inline-flex",
+                    flexDirection: "column",
+                    position: "relative",
+                    bottom: "40px",
                     marginLeft: "10px",
                 }}>
 
